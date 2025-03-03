@@ -1,0 +1,1741 @@
+INFO:root:Main script executed successfully.
+INFO:root:Main script executed successfully.
+INFO:root:Main script executed successfully.
+INFO:root:Main script executed successfully.
+INFO:root:Main script executed successfully.
+INFO:root:Main script executed successfully.
+2025-02-15 15:33:38,487 - nba_prediction.config.config - ERROR - Error in main script: Command '['python3', 'nba_prediction/scripts/init_db.py']' returned non-zero exit status 2.
+2025-02-15 15:41:18,080 - nba_prediction.config.config - ERROR - Error in main script: Command '['python3', 'nba_prediction/scripts/init_db.py']' returned non-zero exit status 2.
+2025-02-15 15:44:22,555 - nba_prediction.config.config - INFO - Tables created successfully.
+2025-02-15 15:44:23,668 - nba_prediction.config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-15 15:44:24,062 - nba_prediction.config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-15 15:44:24,171 - nba_prediction.config.config - ERROR - Unexpected error: name 'ODDS_API_KEY' is not defined
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_betting_odds.py", line 9, in fetch_odds
+    url = f'https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey={ODDS_API_KEY}&regions=us&markets=player_props'
+NameError: name 'ODDS_API_KEY' is not defined
+2025-02-15 15:44:24,180 - nba_prediction.config.config - INFO - Main script executed successfully.
+2025-02-15 16:04:14,239 - nba_prediction.config.config - ERROR - Unexpected error creating tables: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/init_db.py", line 7, in create_tables
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)  # Ensure the data directory exists
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/posixpath.py", line 152, in dirname
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-02-15 16:04:15,129 - nba_prediction.config.config - ERROR - Error saving stats for LeBron James: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 17, in save_to_db
+    with sqlite3.connect(DB_PATH) as conn:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-02-15 16:04:15,276 - nba_prediction.config.config - ERROR - Error saving stats for Kevin Durant: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 17, in save_to_db
+    with sqlite3.connect(DB_PATH) as conn:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-02-15 16:04:15,400 - nba_prediction.config.config - ERROR - Unexpected error: name 'ODDS_API_KEY' is not defined
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_betting_odds.py", line 9, in fetch_odds
+    url = f'https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey={ODDS_API_KEY}&regions=us&markets=player_props'
+NameError: name 'ODDS_API_KEY' is not defined
+2025-02-15 16:04:15,408 - nba_prediction.config.config - INFO - Main script executed successfully.
+2025-02-15 16:20:46,708 - nba_prediction.config.config - INFO - Tables created successfully.
+2025-02-15 16:20:47,758 - nba_prediction.config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-15 16:20:48,029 - nba_prediction.config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-15 16:20:48,158 - nba_prediction.config.config - ERROR - Unexpected error: name 'ODDS_API_KEY' is not defined
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_betting_odds.py", line 9, in fetch_odds
+    url = f'https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey={ODDS_API_KEY}&regions=us&markets=player_props'
+NameError: name 'ODDS_API_KEY' is not defined
+2025-02-15 16:20:48,167 - nba_prediction.config.config - INFO - Main script executed successfully.
+2025-02-16 01:37:21,379 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 9, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 01:45:13,637 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 9, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 01:45:19,978 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 9, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 02:21:51,086 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 02:24:45,311 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 02:26:01,415 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 02:26:49,321 - config.config - ERROR - Error in main script: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', 'scripts/init_db.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/init_db.py']' returned non-zero exit status 1.
+2025-02-16 02:29:33,352 - config.config - ERROR - Error in main script: Command '['python3', '-m', 'scripts.init_db']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', '-m', 'scripts.init_db'], check=True, env={**os.environ, 'PYTHONPATH': os.getcwd()})
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '-m', 'scripts.init_db']' returned non-zero exit status 1.
+2025-02-16 02:35:38,941 - config.config - ERROR - Error in main script: Command '['python3', '-m', 'scripts.init_db']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/main.py", line 12, in main
+    subprocess.run(['python3', '-m', 'scripts.init_db'], check=True, env={**os.environ, 'PYTHONPATH': os.getcwd()})
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', '-m', 'scripts.init_db']' returned non-zero exit status 1.
+2025-02-16 02:36:45,019 - config.config - INFO - Tables created successfully.
+2025-02-16 02:36:46,528 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-16 02:36:46,713 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-16 02:36:47,388 - config.config - ERROR - Error fetching betting odds: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey=9d5796e7bc24a65fdb146b0d4b55fe95&regions=us&markets=player_props
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_betting_odds.py", line 11, in fetch_odds
+    response.raise_for_status()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey=9d5796e7bc24a65fdb146b0d4b55fe95&regions=us&markets=player_props
+2025-02-16 02:36:47,415 - config.config - INFO - Main script executed successfully.
+2025-02-16 13:42:58,323 - config.config - INFO - Tables created successfully.
+2025-02-16 13:42:59,320 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-16 13:42:59,524 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-16 13:43:00,339 - config.config - ERROR - Error fetching betting odds: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey=9d5796e7bc24a65fdb146b0d4b55fe95&regions=us&markets=player_props
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_betting_odds.py", line 11, in fetch_odds
+    response.raise_for_status()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 422 Client Error: Unprocessable Entity for url: https://api.the-odds-api.com/v4/sports/basketball_nba/odds/?apiKey=9d5796e7bc24a65fdb146b0d4b55fe95&regions=us&markets=player_props
+2025-02-16 13:43:00,370 - config.config - INFO - Main script executed successfully.
+2025-02-16 13:52:21,013 - config.config - INFO - Tables created successfully.
+2025-02-16 13:52:22,198 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-16 13:52:22,334 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-16 13:52:23,121 - config.config - INFO - Main script executed successfully.
+2025-02-16 13:53:46,167 - config.config - INFO - Tables created successfully.
+2025-02-16 13:53:47,044 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-16 13:53:47,187 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-16 13:53:47,669 - config.config - INFO - Main script executed successfully.
+2025-02-16 13:54:07,204 - config.config - ERROR - Error in process main script: Command '['python3', 'scripts/process_data.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/process_main.py", line 10, in process_main
+    subprocess.run(['python3', 'scripts/process_data.py'], check=True)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python3', 'scripts/process_data.py']' returned non-zero exit status 1.
+2025-02-16 13:56:13,382 - config.config - ERROR - Unexpected error in process_data: read_sql() got an unexpected keyword argument 'on_bad_lines'
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/process_data.py", line 8, in process_data
+    df = pd.read_sql('SELECT * FROM player_stats', conn, on_bad_lines='skip')
+TypeError: read_sql() got an unexpected keyword argument 'on_bad_lines'
+2025-02-16 13:56:13,724 - config.config - ERROR - Unexpected error in feature engineering: Execution failed on sql 'SELECT * FROM cleaned_player_stats': no such table: cleaned_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: cleaned_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/feature_engineering.py", line 8, in feature_engineering
+    df = pd.read_sql('SELECT * FROM cleaned_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM cleaned_player_stats': no such table: cleaned_player_stats
+2025-02-16 13:56:13,752 - config.config - INFO - Process main script executed successfully.
+2025-02-17 15:00:05,712 - config.config - INFO - Tables created successfully.
+2025-02-17 15:00:06,870 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-17 15:00:07,001 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-17 15:00:07,755 - config.config - INFO - Main script executed successfully.
+2025-02-17 15:32:02,055 - config.config - INFO - Player stats data loaded successfully.
+2025-02-17 15:32:02,058 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-17 15:37:50,574 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-17 15:37:50,577 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-17 15:42:10,472 - config.config - INFO - Player stats data loaded successfully.
+2025-02-17 15:42:10,476 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-17 15:42:10,822 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-17 15:42:10,826 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-17 15:42:10,852 - config.config - INFO - Process main script executed successfully.
+2025-02-17 15:42:58,904 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:42:58,907 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:42:58,910 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:42:58,913 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:42:58,914 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:42:58,916 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,198 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,201 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,204 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,206 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,208 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:43:06,211 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 15:49:23,393 - config.config - ERROR - Error training XGBoost model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 22, in train_xgboost
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 14, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-17 15:49:27,205 - config.config - ERROR - Error training LSTM model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 36, in train_lstm
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 17, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-17 15:51:07,248 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-17 15:51:07,381 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-17 15:51:35,147 - config.config - ERROR - Error training XGBoost model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 22, in train_xgboost
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 14, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-17 15:51:35,148 - config.config - ERROR - Error training LSTM model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 36, in train_lstm
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 17, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-17 15:51:35,149 - config.config - INFO - Processing predictions for LeBron James
+2025-02-17 15:51:35,153 - config.config - INFO - Processing predictions for Kevin Durant
+2025-02-17 18:13:44,881 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:13:44,883 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:13:44,885 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:13:44,887 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:13:44,889 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:13:44,891 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-17 18:15:10,500 - config.config - WARNING - No data available for training.
+2025-02-17 18:28:55,156 - config.config - INFO - Player stats data loaded successfully.
+2025-02-17 18:28:55,158 - config.config - WARNING - Processed data is empty after cleaning.
+2025-02-17 18:29:15,326 - config.config - INFO - Player stats data loaded successfully.
+2025-02-17 18:29:15,328 - config.config - WARNING - Processed data is empty after cleaning.
+2025-02-19 21:02:18,792 - config.config - INFO - Player stats data loaded successfully.
+2025-02-19 21:02:18,796 - config.config - INFO - Initial data preview:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-19 21:02:18,799 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-19 21:02:18,802 - config.config - INFO - Data after efficiency calculation:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None    1.473684
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None    1.243902
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None    1.416667
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None    1.138889
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None    1.138889
+2025-02-19 21:02:18,805 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-19 21:02:52,169 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:02:52,177 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:03:21,335 - config.config - ERROR - Error preparing sequences: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 27, in prepare_sequences
+    X.append(df[features].iloc[i:i+timesteps].values)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:03:21,338 - config.config - ERROR - Error training LSTM model: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 45, in train_lstm
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/model_selection/_split.py", line 2851, in train_test_split
+    n_train, n_test = _validate_shuffle_split(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/model_selection/_split.py", line 2481, in _validate_shuffle_split
+    raise ValueError(
+ValueError: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2025-02-19 21:05:58,124 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:05:58,132 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:06:35,149 - config.config - ERROR - Error preparing sequences: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 27, in prepare_sequences
+    X.append(df[features].iloc[i:i+timesteps].values)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:06:35,153 - config.config - ERROR - Error training LSTM model: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 45, in train_lstm
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/model_selection/_split.py", line 2851, in train_test_split
+    n_train, n_test = _validate_shuffle_split(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/sklearn/model_selection/_split.py", line 2481, in _validate_shuffle_split
+    raise ValueError(
+ValueError: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2025-02-19 21:07:11,886 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:07:11,895 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:07:19,367 - config.config - ERROR - Error training LSTM model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 36, in train_lstm
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_lstm.py", line 17, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-19 21:08:40,028 - config.config - INFO - LSTM Model trained successfully with MSE: 41.5631
+2025-02-19 21:08:40,028 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:08:40,043 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:09:25,820 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:09:25,831 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:09:25,833 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:09:45,359 - config.config - INFO - LSTM Model trained successfully with MSE: 43.3869
+2025-02-19 21:09:45,359 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:09:45,370 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:11:20,682 - config.config - ERROR - Error training XGBoost model: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2674, in execute
+    cur.execute(sql, *args)
+sqlite3.OperationalError: no such table: processed_player_stats
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 22, in train_xgboost
+    df = load_data()
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/train_xgboost.py", line 14, in load_data
+    df = pd.read_sql('SELECT * FROM processed_player_stats', conn)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 706, in read_sql
+    return pandas_sql.read_query(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2738, in read_query
+    cursor = self.execute(sql, params)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/io/sql.py", line 2686, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql 'SELECT * FROM processed_player_stats': no such table: processed_player_stats
+2025-02-19 21:11:56,488 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:11:56,491 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:12:51,919 - config.config - INFO - Tables created successfully.
+2025-02-19 21:13:00,506 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:13:00,509 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:13:06,805 - config.config - INFO - LSTM Model trained successfully with MSE: 39.0723
+2025-02-19 21:13:06,805 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:13:06,820 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:14:04,281 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:14:04,284 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:14:06,754 - config.config - INFO - LSTM Model trained successfully with MSE: 38.7464
+2025-02-19 21:14:06,754 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:14:06,768 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:14:06,768 - config.config - INFO - Processing predictions for LeBron James
+2025-02-19 21:14:06,770 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 63, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:15:22,761 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:15:22,768 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:15:22,770 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:15:49,969 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3482
+2025-02-19 21:15:49,972 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:15:52,661 - config.config - INFO - LSTM Model trained successfully with MSE: 37.1596
+2025-02-19 21:15:52,661 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:15:52,677 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:15:52,677 - config.config - INFO - Processing predictions for LeBron James
+2025-02-19 21:15:52,678 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 63, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:16:55,313 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:16:55,323 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:16:55,326 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:17:09,153 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:17:09,156 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:17:09,158 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:17:09,160 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:17:09,162 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:17:09,163 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,744 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,747 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,750 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,753 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,755 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:19:13,757 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-19 21:20:57,535 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:20:57,538 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:21:00,126 - config.config - INFO - LSTM Model trained successfully with MSE: 38.8941
+2025-02-19 21:21:00,127 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:21:00,139 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:21:00,139 - config.config - INFO - Processing predictions for LeBron James
+2025-02-19 21:21:00,140 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 63, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:22:30,776 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:22:30,785 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:22:30,787 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:22:43,982 - config.config - INFO - Player stats data loaded successfully.
+2025-02-19 21:22:43,985 - config.config - INFO - Initial data preview:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-19 21:22:43,988 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-19 21:22:43,992 - config.config - INFO - Data after efficiency calculation:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None    1.473684
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None    1.243902
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None    1.416667
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None    1.138889
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None    1.138889
+2025-02-19 21:22:43,994 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-19 21:22:44,307 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:22:44,315 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:22:44,317 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:22:44,345 - config.config - INFO - Process main script executed successfully.
+2025-02-19 21:22:52,720 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:22:52,725 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:22:52,727 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:23:04,956 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:23:04,958 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:23:07,516 - config.config - INFO - LSTM Model trained successfully with MSE: 39.1995
+2025-02-19 21:23:07,516 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:23:07,530 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:23:07,530 - config.config - INFO - Processing predictions for LeBron James
+2025-02-19 21:23:07,532 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 63, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-19 21:23:22,362 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-19 21:23:22,366 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-19 21:23:22,369 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-19 21:23:38,682 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-19 21:23:38,686 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-19 21:23:41,136 - config.config - INFO - LSTM Model trained successfully with MSE: 44.2077
+2025-02-19 21:23:41,136 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-19 21:23:41,148 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-19 21:23:41,148 - config.config - INFO - Processing predictions for LeBron James
+2025-02-19 21:23:41,150 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 63, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-20 13:51:28,943 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-20 13:51:28,948 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-20 13:51:31,473 - config.config - INFO - LSTM Model trained successfully with MSE: 36.8634
+2025-02-20 13:51:31,473 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-20 13:51:31,488 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-20 13:51:31,488 - config.config - INFO - Processing predictions for LeBron James
+2025-02-20 13:51:31,489 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 110, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-20 16:36:59,163 - config.config - INFO - XGBoost Model trained successfully with MSE: 77.3483
+2025-02-20 16:36:59,168 - config.config - INFO - Model saved to /Users/burbanktrucking/workspace/nba_prediction/models/xgboost_model.pkl
+2025-02-20 16:37:01,676 - config.config - INFO - LSTM Model trained successfully with MSE: 35.5862
+2025-02-20 16:37:01,676 - absl - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-20 16:37:01,688 - config.config - INFO - LSTM model saved to /Users/burbanktrucking/workspace/nba_prediction/models/lstm_model.h5
+2025-02-20 16:37:01,688 - config.config - INFO - Processing predictions for LeBron James
+2025-02-20 16:37:01,689 - config.config - ERROR - Unexpected error in daily predictions: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/daily_predictions.py", line 110, in daily_predictions
+    xgb_predictions = make_predictions(xgb_model, data[['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5']], 'XGBoost')
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['PTS_rolling_5', 'AST_rolling_5', 'REB_rolling_5'], dtype='object')] are in the [columns]"
+2025-02-20 16:40:34,702 - config.config - INFO - Player stats data loaded successfully.
+2025-02-20 16:40:34,706 - config.config - INFO - Initial data preview:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-20 16:40:34,710 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-20 16:40:34,714 - config.config - INFO - Data after efficiency calculation:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None    1.473684
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None    1.243902
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None    1.416667
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None    1.138889
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None    1.138889
+2025-02-20 16:40:34,716 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-20 16:40:35,060 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-20 16:40:35,068 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-20 16:40:35,070 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-20 16:40:35,099 - config.config - INFO - Process main script executed successfully.
+2025-02-20 16:57:40,922 - config.config - INFO - Player stats data loaded successfully.
+2025-02-20 16:57:40,926 - config.config - INFO - Initial data preview:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-20 16:57:40,932 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None
+2025-02-20 16:57:40,935 - config.config - INFO - Data after efficiency calculation:
+   player_id   player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0       2544  LeBron James  APR 14, 2024      28       17        11               0          4          19              38              None    1.473684
+1       2544  LeBron James  APR 12, 2024      37        5         9               3          8          -3              41              None    1.243902
+2       2544  LeBron James  APR 09, 2024      33       11         7               1          4          -6              36              None    1.416667
+3       2544  LeBron James  APR 06, 2024      24       12         5               1          5          10              36              None    1.138889
+4       2544  LeBron James  APR 03, 2024      25        9         7               0          4           9              36              None    1.138889
+2025-02-20 16:57:40,937 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-20 16:57:41,312 - config.config - INFO - Loaded cleaned player stats data successfully.
+2025-02-20 16:57:41,318 - config.config - INFO - Rolling averages calculated:
+   PTS_rolling_5  AST_rolling_5  REB_rolling_5
+0      28.000000          17.00           11.0
+1      32.500000          11.00           10.0
+2      32.666667          11.00            9.0
+3      30.500000          11.25            8.0
+4      29.400000          10.80            7.8
+2025-02-20 16:57:41,321 - config.config - INFO - Feature-engineered data saved to feature_engineered_stats table.
+2025-02-20 16:57:41,351 - config.config - INFO - Process main script executed successfully.
+2025-02-22 19:21:36,844 - config.config - INFO - Player stats for Joel Embiid saved to database.
+2025-02-22 19:21:36,975 - config.config - INFO - Player stats for Devin Booker saved to database.
+2025-02-22 19:21:37,100 - config.config - INFO - Player stats for Ja Morant saved to database.
+2025-02-22 19:21:37,198 - config.config - INFO - Player stats for Anthony Edwards saved to database.
+2025-02-22 19:21:37,575 - config.config - INFO - Player stats for Al Horford saved to database.
+2025-02-22 19:21:37,785 - config.config - INFO - Player stats for Klay Thompson saved to database.
+2025-02-22 19:21:37,826 - config.config - INFO - Player stats for Giannis Antetokounmpo saved to database.
+2025-02-22 19:21:37,971 - config.config - INFO - Player stats for DeAaron Fox saved to database.
+2025-02-22 19:21:38,046 - config.config - INFO - Player stats for Jrue Holiday saved to database.
+2025-02-22 19:21:38,760 - config.config - INFO - Player stats for Kristaps Porziņģis saved to database.
+2025-02-22 19:21:39,118 - config.config - INFO - Player stats for Duncan Robinson saved to database.
+2025-02-22 19:22:03,356 - config.config - INFO - Tables created successfully.
+2025-02-22 19:22:12,505 - config.config - INFO - Player stats for Joel Embiid saved to database.
+2025-02-22 19:22:12,549 - config.config - INFO - Player stats for Devin Booker saved to database.
+2025-02-22 19:22:12,591 - config.config - INFO - Player stats for Ja Morant saved to database.
+2025-02-22 19:22:12,669 - config.config - INFO - Player stats for Anthony Edwards saved to database.
+2025-02-22 19:22:13,262 - config.config - INFO - Player stats for Al Horford saved to database.
+2025-02-22 19:22:13,550 - config.config - INFO - Player stats for Klay Thompson saved to database.
+2025-02-22 19:22:13,609 - config.config - INFO - Player stats for Giannis Antetokounmpo saved to database.
+2025-02-22 19:22:13,879 - config.config - INFO - Player stats for DeAaron Fox saved to database.
+2025-02-22 19:22:13,962 - config.config - INFO - Player stats for Jrue Holiday saved to database.
+2025-02-22 19:22:14,195 - config.config - INFO - Player stats for Kristaps Porziņģis saved to database.
+2025-02-22 19:22:14,332 - config.config - INFO - Player stats for Duncan Robinson saved to database.
+2025-02-22 19:22:14,471 - config.config - INFO - Player stats for PJ Tucker saved to database.
+2025-02-22 19:22:14,618 - config.config - INFO - Player stats for CJ McCollum saved to database.
+2025-02-22 19:22:15,309 - config.config - INFO - Player stats for Tobias Harris saved to database.
+2025-02-22 19:22:15,435 - config.config - INFO - Player stats for Josh Giddey saved to database.
+2025-02-22 19:22:16,091 - config.config - INFO - Player stats for Jalen Williams saved to database.
+2025-02-22 19:22:16,306 - config.config - INFO - Player stats for Dereck Lively II saved to database.
+2025-02-22 19:22:16,399 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-22 19:22:16,523 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-22 19:22:46,527 - config.config - ERROR - Error fetching stats for player_id 203076: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:22:46,870 - config.config - INFO - Player stats for D'Angelo Russell saved to database.
+2025-02-22 19:22:46,951 - config.config - INFO - Player stats for Austin Reaves saved to database.
+2025-02-22 19:22:47,141 - config.config - INFO - Player stats for Rui Hachimura saved to database.
+2025-02-22 19:22:47,443 - config.config - INFO - Player stats for Jarred Vanderbilt saved to database.
+2025-02-22 19:22:47,875 - config.config - INFO - Player stats for Gabe Vincent saved to database.
+2025-02-22 19:22:47,919 - config.config - INFO - Player stats for Christian Wood saved to database.
+2025-02-22 19:22:48,113 - config.config - INFO - Player stats for Jaxson Hayes saved to database.
+2025-02-22 19:22:48,292 - config.config - INFO - Player stats for Max Christie saved to database.
+2025-02-22 19:22:48,443 - config.config - INFO - Player stats for Cam Reddish saved to database.
+2025-02-22 19:22:48,521 - config.config - INFO - Player stats for Taurean Prince saved to database.
+2025-02-22 19:22:48,650 - config.config - INFO - Player stats for Nikola Jokić saved to database.
+2025-02-22 19:22:49,241 - config.config - INFO - Player stats for Stephen Curry saved to database.
+2025-02-22 19:22:49,411 - config.config - INFO - Player stats for Luka Dončić saved to database.
+2025-02-22 19:22:49,481 - config.config - INFO - Player stats for Jayson Tatum saved to database.
+2025-02-22 19:26:13,492 - config.config - INFO - Player stats data loaded successfully.
+2025-02-22 19:26:13,496 - config.config - INFO - Initial data preview:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None
+2025-02-22 19:26:13,500 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None
+2025-02-22 19:26:13,503 - config.config - INFO - Data after efficiency calculation:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None    1.625000
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None    1.555556
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None    1.869565
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None    1.090909
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None    1.275862
+2025-02-22 19:26:13,507 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-22 19:31:07,644 - config.config - INFO - Player stats data loaded successfully.
+2025-02-22 19:31:07,648 - config.config - INFO - Initial data preview:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None
+2025-02-22 19:31:07,652 - config.config - INFO - Data after dropping rows with missing key values:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None
+2025-02-22 19:31:07,656 - config.config - INFO - Data after efficiency calculation:
+   player_id  player_name     game_date  points  assists  rebounds  three_pointers  turnovers  plus_minus  minutes_played efficiency_rating  efficiency
+0     203954  Joel Embiid  APR 12, 2024      32        7        13               4          4          22              32              None    1.625000
+1     203954  Joel Embiid  APR 09, 2024      37        8        11               4          5          17              36              None    1.555556
+2     203954  Joel Embiid  APR 06, 2024      30        1        12               2          8          15              23              None    1.869565
+3     203954  Joel Embiid  APR 04, 2024      29        3         4               3          1         -19              33              None    1.090909
+4     203954  Joel Embiid  APR 02, 2024      24        7         6               0          6          -2              29              None    1.275862
+2025-02-22 19:31:07,662 - config.config - INFO - Processed data saved to cleaned_player_stats table.
+2025-02-22 19:36:13,137 - config.config - INFO - Fetching stats for Joel Embiid (ID: 203954)
+2025-02-22 19:36:13,408 - config.config - INFO - Fetched data for player_id 203954:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     203954  0022301171  APR 12, 2024  PHI vs. ORL  W   32   10   23   0.435  ...    13   13    7    0    1    4   2   32          22                1
+1     22023     203954  0022301145  APR 09, 2024  PHI vs. DET  W   36   12   22   0.545  ...     9   11    8    3    2    5   4   37          17                1
+2     22023     203954  0022301129  APR 06, 2024    PHI @ MEM  W   23    9   13   0.692  ...     9   12    1    0    2    8   2   30          15                1
+3     22023     203954  0022301111  APR 04, 2024    PHI @ MIA  W   33   11   25   0.440  ...     4    4    3    1    1    1   2   29         -19                1
+4     22023     203954  0022301093  APR 02, 2024  PHI vs. OKC  W   29    6   14   0.429  ...     5    6    7    3    0    6   4   24          -2                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,416 - config.config - INFO - Player stats for Joel Embiid saved to database.
+2025-02-22 19:36:13,417 - config.config - INFO - Fetching stats for Devin Booker (ID: 1626164)
+2025-02-22 19:36:13,530 - config.config - INFO - Fetched data for player_id 1626164:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1626164  0022301194  APR 14, 2024    PHX @ MIN  W   36    6   16   0.375  ...     2    4    7    1    0    1   3   23          20                1
+1     22023    1626164  0022301185  APR 12, 2024    PHX @ SAC  W   41    7   12   0.583  ...     3    4    6    0    0    4   5   21          -1                1
+2     22023    1626164  0022301165  APR 10, 2024    PHX @ LAC  W   39   13   24   0.542  ...     0    1    4    1    1    1   1   37           9                1
+3     22023    1626164  0022301156  APR 09, 2024  PHX vs. LAC  L   40    1   11   0.091  ...     2    3    5    2    0    3   2   12          -7                1
+4     22023    1626164  0022301138  APR 07, 2024  PHX vs. NOP  L   39    9   16   0.563  ...     3    3    7    1    0    4   3   25          -6                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,534 - config.config - INFO - Player stats for Devin Booker saved to database.
+2025-02-22 19:36:13,534 - config.config - INFO - Fetching stats for Ja Morant (ID: 1629630)
+2025-02-22 19:36:13,685 - config.config - INFO - Fetched data for player_id 1629630:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629630  0022300491  JAN 05, 2024    MEM @ LAL  W   35    7   17   0.412  ...     5    7    7    1    1    2   3   21          15                1
+1     22023    1629630  0022300470  JAN 03, 2024  MEM vs. TOR  L   35   10   18   0.556  ...     7    8    9    1    0    2   1   28          -7                1
+2     22023    1629630  0022300460  JAN 02, 2024  MEM vs. SAS  W   35    7   15   0.467  ...     5    5   10    1    0    4   3   26          -1                1
+3     22023    1629630  0022300449  DEC 31, 2023  MEM vs. SAC  L   31    4   12   0.333  ...     3    3    3    0    0    0   3   17          -9                1
+4     22023    1629630  0022300438  DEC 29, 2023    MEM @ LAC  L   37    7   19   0.368  ...     6    6   10    0    0    3   4   19         -19                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,687 - config.config - INFO - Player stats for Ja Morant saved to database.
+2025-02-22 19:36:13,687 - config.config - INFO - Fetching stats for Anthony Edwards (ID: 1630162)
+2025-02-22 19:36:13,721 - config.config - INFO - Fetched data for player_id 1630162:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1630162  0022301194  APR 14, 2024  MIN vs. PHX  L   35    3    7   0.429  ...     5    6    4    1    1    5   3   13         -21                1
+1     22023    1630162  0022301178  APR 12, 2024  MIN vs. ATL  W   27    4   12   0.333  ...     4    4    4    2    0    3   4   14           0                1
+2     22023    1630162  0022301164  APR 10, 2024    MIN @ DEN  L   35    9   18   0.500  ...     2    2    4    0    0    1   1   25         -16                1
+3     22023    1630162  0022301152  APR 09, 2024  MIN vs. WAS  W   38   17   29   0.586  ...     5    6    7    0    0    2   0   51           6                1
+4     22023    1630162  0022301143  APR 07, 2024    MIN @ LAL  W   35    9   20   0.450  ...     1    1    8    1    0    1   1   26           2                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,725 - config.config - INFO - Player stats for Anthony Edwards saved to database.
+2025-02-22 19:36:13,725 - config.config - INFO - Fetching stats for Victor Wembanyama (ID: 1641703)
+2025-02-22 19:36:13,761 - config.config - INFO - Fetched data for player_id 1641703: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:36:13,761 - config.config - WARNING - No data fetched for Victor Wembanyama (ID: 1641703)
+2025-02-22 19:36:13,761 - config.config - INFO - Fetching stats for Al Horford (ID: 200768)
+2025-02-22 19:36:13,801 - config.config - INFO - Fetched data for player_id 200768:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     200768  0022301192  APR 14, 2024  PHI vs. BKN  W   23    0    2   0.000  ...     4    4    8    1    0    2   1    0          17                1
+1     22023     200768  0022301171  APR 12, 2024  PHI vs. ORL  W   24    2    3   0.667  ...     2    3    2    0    0    2   3    7          11                1
+2     22023     200768  0022301129  APR 06, 2024    PHI @ MEM  W   21    3    4   0.750  ...     1    1    1    0    1    0   4    8           7                1
+3     22023     200768  0022301111  APR 04, 2024    PHI @ MIA  W   34    3    7   0.429  ...     6    6    5    1    0    1   2    8          11                1
+4     22023     200768  0022301093  APR 02, 2024  PHI vs. OKC  W   28    1    1   1.000  ...     1    1    4    0    0    1   3    4           4                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,805 - config.config - INFO - Player stats for Al Horford saved to database.
+2025-02-22 19:36:13,805 - config.config - INFO - Fetching stats for Jaren Jackson Jr. (ID: 1629644)
+2025-02-22 19:36:13,832 - config.config - INFO - Fetched data for player_id 1629644: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:36:13,832 - config.config - WARNING - No data fetched for Jaren Jackson Jr. (ID: 1629644)
+2025-02-22 19:36:13,832 - config.config - INFO - Fetching stats for Klay Thompson (ID: 202695)
+2025-02-22 19:36:13,867 - config.config - INFO - Fetched data for player_id 202695:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     202695  0022301079  MAR 31, 2024    LAC @ CHA  W   37   10   19   0.526  ...     4    5    2    0    0    2   2   23           5                1
+1     22023     202695  0022301064  MAR 29, 2024    LAC @ ORL  W   38   12   21   0.571  ...    10   11    5    4    2    3   4   29           5                1
+2     22023     202695  0022301052  MAR 27, 2024    LAC @ PHI  W   36    7   19   0.368  ...     5    9    3    2    2    1   2   17           5                1
+3     22023     202695  0022301043  MAR 25, 2024  LAC vs. IND  L   38   11   18   0.611  ...     2    4    3    0    2    3   2   26         -10                1
+4     22023     202695  0022301028  MAR 24, 2024  LAC vs. PHI  L   31    7   16   0.438  ...     5    6    3    1    0    2   1   20          -1                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:13,871 - config.config - INFO - Player stats for Klay Thompson saved to database.
+2025-02-22 19:36:13,871 - config.config - INFO - Fetching stats for Giannis Antetokounmpo (ID: 203507)
+2025-02-22 19:36:14,059 - config.config - INFO - Fetched data for player_id 203507:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     203507  0022301148  APR 09, 2024  MIL vs. BOS  W   29    7   11   0.636  ...     5    8    7    1    2    4   1   15          17                1
+1     22023     203507  0022301139  APR 07, 2024  MIL vs. NYK  L   39   10   20   0.500  ...    12   15    8    1    2    4   2   28          -5                1
+2     22023     203507  0022301107  APR 03, 2024  MIL vs. MEM  L   32   10   23   0.435  ...     6    7    8    1    5    3   4   21           3                1
+3     22023     203507  0022301095  APR 02, 2024    MIL @ WAS  L   36   15   21   0.714  ...    12   15   10    0    0    2   2   35           2                1
+4     22023     203507  0022301076  MAR 30, 2024    MIL @ ATL  W   38   12   22   0.545  ...    12   16    8    3    1    3   2   36           8                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:14,065 - config.config - INFO - Player stats for Giannis Antetokounmpo saved to database.
+2025-02-22 19:36:14,065 - config.config - INFO - Fetching stats for DeAaron Fox (ID: 1627747)
+2025-02-22 19:36:14,147 - config.config - INFO - Fetched data for player_id 1627747:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1627747  0022301174  APR 12, 2024  CLE vs. IND  W   27    6   12   0.500  ...     4    6    5    1    0    1   1   16          11                1
+1     22023    1627747  0022301158  APR 10, 2024  CLE vs. MEM  W   28    6   13   0.462  ...     2    2    2    2    0    1   3   18          12                1
+2     22023    1627747  0022301132  APR 07, 2024    CLE @ LAC  L   37    7   15   0.467  ...     4    5    2    1    1    0   3   18           0                1
+3     22023    1627747  0022301127  APR 06, 2024    CLE @ LAL  L   28    8   14   0.571  ...     6    7    2    0    0    1   0   21         -11                1
+4     22023    1627747  0022301110  APR 03, 2024    CLE @ PHX  L   24    3    5   0.600  ...     3    3    1    3    0    5   2   11         -20                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:14,153 - config.config - INFO - Player stats for DeAaron Fox saved to database.
+2025-02-22 19:36:14,153 - config.config - INFO - Fetching stats for Jrue Holiday (ID: 202699)
+2025-02-22 19:36:14,205 - config.config - INFO - Fetched data for player_id 202699:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     202699  0022301192  APR 14, 2024  PHI vs. BKN  W   30    8   15   0.533  ...     6    8    2    1    1    1   1   21          19                1
+1     22023     202699  0022301171  APR 12, 2024  PHI vs. ORL  W   38    5   10   0.500  ...     4    6    3    2    2    1   2   14          24                1
+2     22023     202699  0022301145  APR 09, 2024  PHI vs. DET  W   28    6   13   0.462  ...     8   12    4    0    1    0   0   15           4                1
+3     22023     202699  0022301093  APR 02, 2024  PHI vs. OKC  W   35    5   14   0.357  ...     6    6    4    0    1    1   3   18           1                1
+4     22023     202699  0022301080  MAR 31, 2024    PHI @ TOR  W   30    8   13   0.615  ...     6    9    3    0    3    1   2   21           8                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:14,209 - config.config - INFO - Player stats for Jrue Holiday saved to database.
+2025-02-22 19:36:14,209 - config.config - INFO - Fetching stats for Damian Lillard (ID: 203457)
+2025-02-22 19:36:14,233 - config.config - INFO - Fetched data for player_id 203457: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:36:14,234 - config.config - WARNING - No data fetched for Damian Lillard (ID: 203457)
+2025-02-22 19:36:14,234 - config.config - INFO - Fetching stats for Bradley Beal (ID: 203086)
+2025-02-22 19:36:14,283 - config.config - INFO - Fetched data for player_id 203086: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:36:14,283 - config.config - WARNING - No data fetched for Bradley Beal (ID: 203086)
+2025-02-22 19:36:14,284 - config.config - INFO - Fetching stats for Kristaps Porziņģis (ID: 203496)
+2025-02-22 19:36:14,317 - config.config - INFO - Fetched data for player_id 203496:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     203496  0022300442  DEC 30, 2023    PHI @ CHI  L    5    0    1   0.000  ...     1    1    0    0    0    0   0    0           1                1
+1     22023     203496  0022300434  DEC 29, 2023    PHI @ HOU  W   16    3    5   0.600  ...     2    4    0    3    0    0   4    7           3                1
+2     22023     203496  0022300415  DEC 27, 2023    PHI @ ORL  W   11    1    2   0.500  ...     1    1    2    2    0    1   2    2           0                1
+3     22023     203496  0022300382  DEC 22, 2023  PHI vs. TOR  W   24    0    1   0.000  ...     3    3    2    1    1    0   4    0          15                1
+4     22023     203496  0022300351  DEC 18, 2023  PHI vs. CHI  L   15    1    3   0.333  ...     1    2    0    2    1    0   2    2         -15                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:14,319 - config.config - INFO - Player stats for Kristaps Porziņģis saved to database.
+2025-02-22 19:36:14,320 - config.config - INFO - Fetching stats for Jaden McDaniels (ID: 1629645)
+2025-02-22 19:36:14,350 - config.config - INFO - Fetched data for player_id 1629645: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:36:14,350 - config.config - WARNING - No data fetched for Jaden McDaniels (ID: 1629645)
+2025-02-22 19:36:14,350 - config.config - INFO - Fetching stats for Duncan Robinson (ID: 1629611)
+2025-02-22 19:36:14,380 - config.config - INFO - Fetched data for player_id 1629611:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629611  0022301199  APR 14, 2024  LAC vs. HOU  L   28   10   14   0.714  ...     4    6    2    1    0    1   1   24          -4                1
+1     22023    1629611  0022301184  APR 12, 2024  LAC vs. UTA  L    5    2    2   1.000  ...     0    1    0    0    0    0   1    5           8                1
+2     22023    1629611  0022301165  APR 10, 2024  LAC vs. PHX  L    8    1    3   0.333  ...     3    3    0    0    0    0   0    3          -3                1
+3     22023    1629611  0022301156  APR 09, 2024    LAC @ PHX  W   38    8   10   0.800  ...     6   10    1    0    0    2   4   17           7                1
+4     22023    1629611  0022301132  APR 07, 2024  LAC vs. CLE  W   29    6    6   1.000  ...     4    4    3    1    0    2   5   14         -10                1
+
+[5 rows x 27 columns]
+2025-02-22 19:36:14,383 - config.config - INFO - Player stats for Duncan Robinson saved to database.
+2025-02-22 19:36:14,384 - config.config - INFO - Fetching stats for PJ Tucker (ID: 1627750)
+2025-02-22 19:36:44,387 - config.config - ERROR - Error fetching stats for player_id 1627750: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:36:44,401 - config.config - WARNING - No data fetched for PJ Tucker (ID: 1627750)
+2025-02-22 19:36:44,401 - config.config - INFO - Fetching stats for CJ McCollum (ID: 203468)
+2025-02-22 19:37:14,508 - config.config - ERROR - Error fetching stats for player_id 203468: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:37:14,512 - config.config - WARNING - No data fetched for CJ McCollum (ID: 203468)
+2025-02-22 19:37:14,512 - config.config - INFO - Fetching stats for Julius Randle (ID: 203503)
+2025-02-22 19:37:44,624 - config.config - ERROR - Error fetching stats for player_id 203503: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:37:44,627 - config.config - WARNING - No data fetched for Julius Randle (ID: 203503)
+2025-02-22 19:37:44,627 - config.config - INFO - Fetching stats for Tobias Harris (ID: 203490)
+2025-02-22 19:38:14,742 - config.config - ERROR - Error fetching stats for player_id 203490: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:38:14,747 - config.config - WARNING - No data fetched for Tobias Harris (ID: 203490)
+2025-02-22 19:38:14,747 - config.config - INFO - Fetching stats for Josh Giddey (ID: 1627742)
+2025-02-22 19:38:15,036 - config.config - INFO - Fetched data for player_id 1627742:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1627742  0022301195  APR 14, 2024  NOP vs. LAL  L   23    6    9   0.667  ...     5    5    0    0    0    2   0   13         -28                1
+1     22023    1627742  0022301004  MAR 21, 2024    NOP @ ORL  L   21    7   12   0.583  ...     4    4    3    1    0    2   2   14          -8                1
+2     22023    1627742  0022300993  MAR 19, 2024    NOP @ BKN  W   32    4   12   0.333  ...     4    4    6    0    1    3   3   11           5                1
+3     22023    1627742  0022300970  MAR 16, 2024  NOP vs. POR  W   35   10   21   0.476  ...     5    7    2    1    4    1   2   22          11                1
+4     22023    1627742  0022300964  MAR 15, 2024  NOP vs. LAC  W   35    4   12   0.333  ...     5    5    7    1    0    0   3   13           1                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,043 - config.config - INFO - Player stats for Josh Giddey saved to database.
+2025-02-22 19:38:15,043 - config.config - INFO - Fetching stats for Jonas Valančiūnas (ID: 203121)
+2025-02-22 19:38:15,068 - config.config - INFO - Fetched data for player_id 203121: Empty DataFrame
+Columns: [SEASON_ID, Player_ID, Game_ID, GAME_DATE, MATCHUP, WL, MIN, FGM, FGA, FG_PCT, FG3M, FG3A, FG3_PCT, FTM, FTA, FT_PCT, OREB, DREB, REB, AST, STL, BLK, TOV, PF, PTS, PLUS_MINUS, VIDEO_AVAILABLE]
+Index: []
+2025-02-22 19:38:15,069 - config.config - WARNING - No data fetched for Jonas Valančiūnas (ID: 203121)
+2025-02-22 19:38:15,069 - config.config - INFO - Fetching stats for Jalen Williams (ID: 1629660)
+2025-02-22 19:38:15,128 - config.config - INFO - Fetched data for player_id 1629660:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629660  0022300081  OCT 27, 2023  CLE vs. OKC  L    9    1    3   0.333  ...     0    1    3    0    0    1   1    2          -7                1
+1     22023    1629660  0022300067  OCT 25, 2023    CLE @ BKN  W    6    1    1   1.000  ...     0    0    0    0    0    0   1    2          -7                1
+
+[2 rows x 27 columns]
+2025-02-22 19:38:15,130 - config.config - INFO - Player stats for Jalen Williams saved to database.
+2025-02-22 19:38:15,130 - config.config - INFO - Fetching stats for Dereck Lively II (ID: 1629627)
+2025-02-22 19:38:15,234 - config.config - INFO - Fetched data for player_id 1629627:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629627  0022301195  APR 14, 2024  NOP vs. LAL  L   34    4   13   0.308  ...     5    8    8    2    0    4   2   12         -21                1
+1     22023    1629627  0022301182  APR 12, 2024    NOP @ GSW  W   37   11   26   0.423  ...     3    3    3    6    1    2   2   26          15                1
+2     22023    1629627  0022301170  APR 11, 2024    NOP @ SAC  W   31   13   21   0.619  ...     3    4    6    3    1    4   0   31          16                1
+3     22023    1629627  0022301157  APR 09, 2024    NOP @ POR  W   33    7   18   0.389  ...     5    7    3    1    1    2   1   22          11                1
+4     22023    1629627  0022301138  APR 07, 2024    NOP @ PHX  W   40   11   21   0.524  ...     7   10    7    1    5    4   2   29           7                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,238 - config.config - INFO - Player stats for Dereck Lively II saved to database.
+2025-02-22 19:38:15,238 - config.config - INFO - Fetching stats for LeBron James (ID: 2544)
+2025-02-22 19:38:15,359 - config.config - INFO - Fetched data for player_id 2544:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023       2544  0022301195  APR 14, 2024    LAL @ NOP  W   38   11   20   0.550  ...     9   11   17    5    1    4   0   28          19                1
+1     22023       2544  0022301177  APR 12, 2024    LAL @ MEM  W   41   13   20   0.650  ...     7    9    5    2    0    8   1   37          -3                1
+2     22023       2544  0022301155  APR 09, 2024  LAL vs. GSW  L   36   14   22   0.636  ...     6    7   11    2    0    4   0   33          -6                1
+3     22023       2544  0022301127  APR 06, 2024  LAL vs. CLE  W   36   10   18   0.556  ...     5    5   12    1    1    5   1   24          10                1
+4     22023       2544  0022301103  APR 03, 2024    LAL @ WAS  W   36    9   18   0.500  ...     5    7    9    3    0    4   2   25           9                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,364 - config.config - INFO - Player stats for LeBron James saved to database.
+2025-02-22 19:38:15,364 - config.config - INFO - Fetching stats for Kevin Durant (ID: 201142)
+2025-02-22 19:38:15,481 - config.config - INFO - Fetched data for player_id 201142:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  ...  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     201142  0022301194  APR 14, 2024    PHX @ MIN  W   38    6   14   0.429  ...     2    4    1    2    1    4   3   15          30                1
+1     22023     201142  0022301185  APR 12, 2024    PHX @ SAC  W   42   11   20   0.550  ...     4    5    3    0    0    3   2   28          -4                1
+2     22023     201142  0022301165  APR 10, 2024    PHX @ LAC  W   37   10   21   0.476  ...     9    9    3    1    2    4   0   24           8                1
+3     22023     201142  0022301156  APR 09, 2024  PHX vs. LAC  L   40    8   22   0.364  ...     2    2    2    2    0    1   2   21         -14                1
+4     22023     201142  0022301138  APR 07, 2024  PHX vs. NOP  L   38    8   22   0.364  ...     4    4    6    0    0    0   1   23         -12                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,486 - config.config - INFO - Player stats for Kevin Durant saved to database.
+2025-02-22 19:38:15,486 - config.config - INFO - Fetching stats for Anthony Davis (ID: 203076)
+2025-02-22 19:38:15,613 - config.config - INFO - Fetched data for player_id 203076:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023     203076  0022301195  APR 14, 2024    LAL @ NOP  W   33   13   17   0.765     0  ...     4     7   11    3    2    0    3   4   30          15                1
+1     22023     203076  0022301177  APR 12, 2024    LAL @ MEM  W   43   11   22   0.500     1  ...     4    10   14    5    1    2    4   2   36           2                1
+2     22023     203076  0022301143  APR 07, 2024  LAL vs. MIN  L   12    2    6   0.333     0  ...     3     1    4    3    2    0    1   2    4           4                1
+3     22023     203076  0022301127  APR 06, 2024  LAL vs. CLE  W   36    7   11   0.636     1  ...     4     9   13    4    3    6    0   2   22           8                1
+4     22023     203076  0022301103  APR 03, 2024    LAL @ WAS  W   38   10   17   0.588     0  ...     3    15   18    1    2    3    2   1   35          29                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,617 - config.config - INFO - Player stats for Anthony Davis saved to database.
+2025-02-22 19:38:15,617 - config.config - INFO - Fetching stats for D'Angelo Russell (ID: 1626156)
+2025-02-22 19:38:15,680 - config.config - INFO - Fetched data for player_id 1626156:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1626156  0022301195  APR 14, 2024    LAL @ NOP  W   38    6   13   0.462     5  ...     0     1    1    4    1    1    0   2   19          24                1
+1     22023    1626156  0022301177  APR 12, 2024    LAL @ MEM  W   35    2    9   0.222     0  ...     0     3    3   10    1    1    2   3    4           1                1
+2     22023    1626156  0022301155  APR 09, 2024  LAL vs. GSW  L   37    3   11   0.273     2  ...     0     2    2    7    0    0    0   2   14         -11                1
+3     22023    1626156  0022301143  APR 07, 2024  LAL vs. MIN  L   39    5   19   0.263     1  ...     0     7    7   11    1    0    1   0   15          -3                1
+4     22023    1626156  0022301127  APR 06, 2024  LAL vs. CLE  W   31   11   17   0.647     6  ...     0     5    5    2    1    1    6   2   28          21                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,684 - config.config - INFO - Player stats for D'Angelo Russell saved to database.
+2025-02-22 19:38:15,684 - config.config - INFO - Fetching stats for Austin Reaves (ID: 1630558)
+2025-02-22 19:38:15,773 - config.config - INFO - Fetched data for player_id 1630558:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1630558  0022301200  APR 14, 2024  SAC vs. POR  W   22    4   11   0.364     3  ...     1     3    4    3    0    0    1   0   11          33                1
+1     22023    1630558  0022301185  APR 12, 2024  SAC vs. PHX  L   20    1    7   0.143     0  ...     0     0    0    3    0    0    1   2    2           7                1
+2     22023    1630558  0022301170  APR 11, 2024  SAC vs. NOP  L   27    5    8   0.625     2  ...     0     2    2    5    0    0    1   1   13          -6                1
+3     22023    1630558  0022301153  APR 09, 2024    SAC @ OKC  L   22    3   10   0.300     1  ...     0     1    1    2    0    0    1   2    8          -6                1
+4     22023    1630558  0022301141  APR 07, 2024    SAC @ BKN  W   28    3    8   0.375     2  ...     0     1    1    3    1    0    1   0   12          36                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,777 - config.config - INFO - Player stats for Austin Reaves saved to database.
+2025-02-22 19:38:15,777 - config.config - INFO - Fetching stats for Rui Hachimura (ID: 1629060)
+2025-02-22 19:38:15,838 - config.config - INFO - Fetched data for player_id 1629060:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629060  0022301195  APR 14, 2024    LAL @ NOP  W   34    5   10   0.500     1  ...     1     6    7    4    2    0    1   1   11          10                1
+1     22023    1629060  0022301177  APR 12, 2024    LAL @ MEM  W   29    5    6   0.833     2  ...     2     3    5    1    1    0    1   1   14         -17                1
+2     22023    1629060  0022301155  APR 09, 2024  LAL vs. GSW  L   31    7   21   0.333     2  ...     2     9   11    2    1    2    0   0   20          -6                1
+3     22023    1629060  0022301143  APR 07, 2024  LAL vs. MIN  L   36   11   17   0.647     4  ...     2     4    6    1    0    0    0   3   30           1                1
+4     22023    1629060  0022301127  APR 06, 2024  LAL vs. CLE  W   27    3    9   0.333     1  ...     0     5    5    0    0    1    1   0    7          -7                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,843 - config.config - INFO - Player stats for Rui Hachimura saved to database.
+2025-02-22 19:38:15,843 - config.config - INFO - Fetching stats for Jarred Vanderbilt (ID: 1629020)
+2025-02-22 19:38:15,889 - config.config - INFO - Fetched data for player_id 1629020:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629020  0022300684  FEB 01, 2024    LAL @ BOS  W   16    3    7   0.429     2  ...     3     4    7    2    3    0    3   0   10          17                1
+1     22023    1629020  0022300669  JAN 30, 2024    LAL @ ATL  L   26    6    6   1.000     0  ...     1     3    4    3    2    0    2   2   12          -9                1
+2     22023    1629020  0022300662  JAN 29, 2024    LAL @ HOU  L    7    1    1   1.000     0  ...     0     0    0    0    1    0    0   0    3          -6                1
+3     22023    1629020  0022300650  JAN 27, 2024    LAL @ GSW  W   41    4    7   0.571     0  ...     2     7    9    5    4    0    2   1   14          30                1
+4     22023    1629020  0022300633  JAN 25, 2024  LAL vs. CHI  W   27    8   11   0.727     1  ...     0     5    5    0    3    1    2   2   17           0                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,891 - config.config - INFO - Player stats for Jarred Vanderbilt saved to database.
+2025-02-22 19:38:15,891 - config.config - INFO - Fetching stats for Gabe Vincent (ID: 1629216)
+2025-02-22 19:38:15,972 - config.config - INFO - Fetched data for player_id 1629216:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629216  0022301195  APR 14, 2024    LAL @ NOP  W   13    0    2     0.0     0  ...     0     0    0    1    0    0    0   2    0          12                1
+1     22023    1629216  0022301177  APR 12, 2024    LAL @ MEM  W   19    2    5     0.4     1  ...     1     0    1    1    0    0    0   0    5          27                1
+2     22023    1629216  0022301155  APR 09, 2024  LAL vs. GSW  L   15    0    3     0.0     0  ...     0     1    1    1    2    0    1   1    0         -14                1
+3     22023    1629216  0022301127  APR 06, 2024  LAL vs. CLE  W   14    0    2     0.0     0  ...     0     0    0    2    0    0    0   1    0          15                1
+4     22023    1629216  0022301103  APR 03, 2024    LAL @ WAS  W   14    0    1     0.0     0  ...     1     0    1    0    0    0    1   1    0          -6                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:15,974 - config.config - INFO - Player stats for Gabe Vincent saved to database.
+2025-02-22 19:38:15,974 - config.config - INFO - Fetching stats for Christian Wood (ID: 1626174)
+2025-02-22 19:38:16,060 - config.config - INFO - Fetched data for player_id 1626174:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1626174  0022300788  FEB 14, 2024    LAL @ UTA  W   16    1    5   0.200     0  ...     1     3    4    1    0    0    1   3    2           2                1
+1     22023    1626174  0022300776  FEB 13, 2024  LAL vs. DET  W   13    4    7   0.571     1  ...     0     4    4    0    1    1    0   1   11          -1                1
+2     22023    1626174  0022300747  FEB 09, 2024  LAL vs. NOP  W    6    4    5   0.800     1  ...     1     0    1    0    0    0    1   0    9           2                1
+3     22023    1626174  0022300740  FEB 08, 2024  LAL vs. DEN  L   19    1    1   1.000     0  ...     0     4    4    1    1    1    0   2    3           7                1
+4     22023    1626174  0022300713  FEB 05, 2024    LAL @ CHA  W   10    3    5   0.600     1  ...     1     5    6    0    0    0    0   1   11           3                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:16,063 - config.config - INFO - Player stats for Christian Wood saved to database.
+2025-02-22 19:38:16,063 - config.config - INFO - Fetching stats for Jaxson Hayes (ID: 1629637)
+2025-02-22 19:38:16,136 - config.config - INFO - Fetched data for player_id 1629637:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1629637  0022301195  APR 14, 2024    LAL @ NOP  W   12    0    0   0.000     0  ...     0     3    3    0    0    0    0   1    0           3                1
+1     22023    1629637  0022301177  APR 12, 2024    LAL @ MEM  W    5    1    2   0.500     0  ...     0     2    2    0    0    1    0   0    2           1                1
+2     22023    1629637  0022301155  APR 09, 2024  LAL vs. GSW  L   28    5    6   0.833     0  ...     3     3    6    1    1    1    2   4   11          -7                1
+3     22023    1629637  0022301143  APR 07, 2024  LAL vs. MIN  L   33    8    9   0.889     0  ...     2     8   10    0    5    1    3   3   19         -14                1
+4     22023    1629637  0022301127  APR 06, 2024  LAL vs. CLE  W   12    2    2   1.000     0  ...     1     2    3    0    1    2    1   2    4          11                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:16,140 - config.config - INFO - Player stats for Jaxson Hayes saved to database.
+2025-02-22 19:38:16,140 - config.config - INFO - Fetching stats for Max Christie (ID: 1631107)
+2025-02-22 19:38:16,188 - config.config - INFO - Fetched data for player_id 1631107:   SEASON_ID  Player_ID     Game_ID     GAME_DATE      MATCHUP WL  MIN  FGM  FGA  FG_PCT  FG3M  ...  OREB  DREB  REB  AST  STL  BLK  TOV  PF  PTS  PLUS_MINUS  VIDEO_AVAILABLE
+0     22023    1631107  0022301189  APR 14, 2024  MIA vs. TOR  W   16    1    4   0.250     1  ...     0     3    3    1    2    0    0   2    3          -5                1
+1     22023    1631107  0022301176  APR 12, 2024  MIA vs. TOR  W   27    9   18   0.500     4  ...     1     4    5    2    1    0    1   1   22           6                1
+2     22023    1631107  0022301161  APR 10, 2024  MIA vs. DAL  L   24    3    9   0.333     0  ...     1     4    5    4    0    0    1   3    6          -9                1
+3     22023    1631107  0022301147  APR 09, 2024    MIA @ ATL  W   40    8   12   0.667     5  ...     0     8    8    1    0    0    1   2   23          -1                1
+4     22023    1631107  0022301133  APR 07, 2024    MIA @ IND  L   24    6   10   0.600     2  ...     0     2    2    0    0    0    0   2   18          14                1
+
+[5 rows x 27 columns]
+2025-02-22 19:38:16,191 - config.config - INFO - Player stats for Max Christie saved to database.
+2025-02-22 19:38:16,191 - config.config - INFO - Fetching stats for Cam Reddish (ID: 1629629)
+2025-02-22 19:38:46,194 - config.config - ERROR - Error fetching stats for player_id 1629629: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:38:46,197 - config.config - WARNING - No data fetched for Cam Reddish (ID: 1629629)
+2025-02-22 19:38:46,197 - config.config - INFO - Fetching stats for Taurean Prince (ID: 1627752)
+2025-02-22 19:39:16,281 - config.config - ERROR - Error fetching stats for player_id 1627752: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:39:16,285 - config.config - WARNING - No data fetched for Taurean Prince (ID: 1627752)
+2025-02-22 19:39:16,286 - config.config - INFO - Fetching stats for Nikola Jokić (ID: 203999)
+2025-02-22 19:39:46,409 - config.config - ERROR - Error fetching stats for player_id 203999: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:39:46,413 - config.config - WARNING - No data fetched for Nikola Jokić (ID: 203999)
+2025-02-22 19:39:46,413 - config.config - INFO - Fetching stats for Stephen Curry (ID: 201939)
+2025-02-22 19:40:16,562 - config.config - ERROR - Error fetching stats for player_id 201939: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:40:16,565 - config.config - WARNING - No data fetched for Stephen Curry (ID: 201939)
+2025-02-22 19:40:16,565 - config.config - INFO - Fetching stats for Luka Dončić (ID: 1629029)
+2025-02-22 19:40:46,656 - config.config - ERROR - Error fetching stats for player_id 1629029: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:40:46,660 - config.config - WARNING - No data fetched for Luka Dončić (ID: 1629029)
+2025-02-22 19:40:46,660 - config.config - INFO - Fetching stats for Jayson Tatum (ID: 1628369)
+2025-02-22 19:41:16,775 - config.config - ERROR - Error fetching stats for player_id 1628369: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1307, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py", line 1163, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burbanktrucking/workspace/nba_prediction/scripts/fetch_nba_stats.py", line 14, in get_player_stats
+    game_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 72, in __init__
+    self.get_request()
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/stats/endpoints/playergamelog.py", line 75, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/nba_api/library/http.py", line 160, in send_api_request
+    response = self.get_session().get(
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/burbanktrucking/workspace/nba_prediction/venv/lib/python3.10/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=30)
+2025-02-22 19:41:16,778 - config.config - WARNING - No data fetched for Jayson Tatum (ID: 1628369)

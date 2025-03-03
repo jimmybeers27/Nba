@@ -1,0 +1,13 @@
+nba_api
+pandas
+requests
+numpy
+scikit-learn
+xgboost
+tensorflow
+joblib
+fastapi
+uvicorn
+streamlit
+matplotlib
+seaborn

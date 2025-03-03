@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 .SFNS-Regular;\f2\fnil\fcharset0 HelveticaNeue-Bold;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;\f4\fnil\fcharset0 .SFNS-Bold;\f5\fswiss\fcharset0 Helvetica;
+\f6\fnil\fcharset0 .SFNS-RegularItalic;\f7\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red14\green14\blue14;\red0\green0\blue0;
+\red151\green0\blue126;\red181\green0\blue19;\red13\green100\blue1;\red20\green0\blue196;}
+{\*\expandedcolortbl;;\cspthree\c0\c0\c0;\cssrgb\c6700\c6700\c6700;\csgray\c0;
+\cssrgb\c66667\c5098\c56863;\cssrgb\c76863\c10196\c8627;\cssrgb\c0\c45490\c0;\cssrgb\c10980\c0\c81176;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 Establishing the format for the table. \
+Separating data by league (I only want NBA stats for now)\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1 \cf3 The 
+\f2\b Unofficial Python API Client Wrapper
+\f1\b0  for 
+\f2\b TheSportsDB
+\f1\b0  is likely a 
+\f2\b third-party library
+\f1\b0  that simplifies making API requests to 
+\f2\b TheSportsDB
+\f1\b0  without needing to manually handle HTTP requests using 
+\f3 requests
+\f1 .\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\b\fs30 \cf3 What This Means for You
+\f1\b0\fs28 \
+\
+Instead of writing 
+\f2\b manual API calls
+\f1\b0  (like we just did), you can use a 
+\f2\b Python wrapper
+\f1\b0  that provides 
+\f2\b pre-built functions
+\f1\b0  to interact with 
+\f2\b TheSportsDB API
+\f1\b0 .
+\f5\fs24 \cf0 \
+\
+
+\f4\b\fs30 \cf3 \uc0\u55357 \u56633  Why Use an API Wrapper?
+\f1\b0\fs28 \
+\
+\uc0\u9989  
+\f2\b Saves Time
+\f1\b0  \'96 No need to manually construct API URLs.\
+\uc0\u9989  
+\f2\b Cleaner Code
+\f1\b0  \'96 Instead of making requests & parsing JSON manually, just call a function.\
+\uc0\u9989  
+\f2\b Error Handling
+\f1\b0  \'96 Some wrappers include built-in error handling.\
+\uc0\u9989  
+\f2\b Easier Future Updates
+\f1\b0  \'96 If TheSportsDB updates its API, the wrapper can handle changes.
+\f5\fs24 \cf0 \
+\
+
+\f4\b\fs30 \cf3 \uc0\u55357 \u56633  How to Check If It Exists
+\f1\b0\fs28 \
+\
+1\uc0\u65039 \u8419  
+\f2\b Search PyPI (Python Package Index) for \'93sportsdb\'94 or \'93thesportsdb\'94:
+\f1\b0 \
+\uc0\u55357 \u56393  {\field{\*\fldinst{HYPERLINK "https://pypi.org/"}}{\fldrslt https://pypi.org/}} 
+\f6\i (Check if a package exists for TheSportsDB.)
+\f1\i0 \
+\
+2\uc0\u65039 \u8419  
+\f2\b Google Search:
+\f1\b0 \
+\uc0\u55357 \u56393  
+\f3 Python TheSportsDB API wrapper
+\f1 \
+\
+3\uc0\u65039 \u8419  
+\f2\b GitHub Repositories:
+\f1\b0 \
+\uc0\u55357 \u56393  {\field{\*\fldinst{HYPERLINK "https://github.com/search?q=thesportsdb"}}{\fldrslt https://github.com/search?q=thesportsdb}} 
+\f6\i (Look for open-source wrappers.)
+\f5\i0\fs24 \cf0 \
+\
+
+\f4\b\fs30 \cf3 \uc0\u55357 \u56633  Example of a Python API Wrapper (If Available)
+\f1\b0\fs28 \
+\
+If a package exists, you could install it with:
+\f5\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f7\fs28 \cf4 pip install sportsdb
+\f5\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf3 Then use it like this:
+\f5\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f7\fs28 \cf5 from\cf4  sportsdb \cf5 import\cf4  TheSportsDBClient\
+\
+client = TheSportsDBClient(api_key=\cf6 "3"\cf4 )  \cf7 # Free API Key\cf4 \
+\
+\cf7 # Fetch Player Stats\cf4 \
+player_stats = client.get_player_stats(player_id=\cf8 34145937\cf4 , season=\cf6 "2023-2024"\cf4 )\
+print(player_stats)\
+\
+\cf7 # Fetch Team Stats\cf4 \
+team_stats = client.get_team_stats(team_id=\cf8 134862\cf4 , season=\cf6 "2023-2024"\cf4 )\
+print(team_stats)
+\f5\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f6\i\fs28 \cf3 (This is just an example\'97actual method names may vary.)
+\f5\i0\fs24 \cf0 \
+\
+
+\f4\b\fs30 \cf3 \uc0\u55357 \u56633  Should We Use a Wrapper or Stick With requests?
+\f1\b0\fs28 \
+\
+\uc0\u9989  
+\f2\b If a wrapper exists & is reliable:
+\f1\b0 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf3 	\'95	
+\f2\b Use it!
+\f1\b0  It\'92ll make API calls easier & cleaner.\
+\uc0\u9989  
+\f2\b If no wrapper exists (or is unreliable):
+\f1\b0 \
+	\'95	Stick with our 
+\f2\b manual API requests using requests
+\f1\b0 , since it\'92s 
+\f2\b fully customizable
+\f1\b0 .\
+\
+Would you like me to 
+\f2\b search for an official/unofficial Python wrapper
+\f1\b0  for TheSportsDB now? \uc0\u55357 \u56960 }
